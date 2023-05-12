@@ -1,0 +1,155 @@
+@charset "UTF-8";
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    background: url(../img/assets/read_news.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    width: 50%;
+    overflow: hidden;
+}
+.container{
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    background-color: black;
+    float: right;
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100%;
+    
+}
+.logo{
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    height: 200px;
+    max-width: 500px;
+    max-height: 180px;
+    order: 0;
+    padding: 30px;
+}
+.content{
+    display: flex;
+    flex-direction: column;
+    color: white;
+    order: 1;
+    flex: 1;
+    padding: 20px;
+    margin-left: 33px;
+}
+div.content  h2{
+    color:#04D361;
+    padding: 5px;
+    margin: 15px -5px ;
+}
+
+div p.txt2{
+    display: flex;
+    color: #E1E1E6;
+    flex-wrap: wrap;
+}
+form{
+    display: flex;
+    position: static;
+    flex-direction: column;
+    align-self: center;
+    justify-content: center;
+    margin-top: 15px;
+}
+label{
+    display: block;
+    margin: 10px 65px ;
+    padding-left: 31px;
+}
+.email{
+    display: inline-flex;
+    flex-direction: row;
+    margin: 0 auto;
+    align-items: center;
+    width: 700px;
+    height: 90%;
+    max-width: 45rem;
+    margin-left: 99px;
+    margin-top: 15px;
+    box-shadow: 0px 2px  rgba(126, 118, 118, 0.562);
+}
+.email input{
+    flex:1;
+}
+.greencard{
+    display: inline-flex;
+    align-items: center;
+    margin-right: -97px;
+}
+.greencard::before{
+    content: "";
+    width: 5px;
+    transform: translateY(7px);
+    height: 30px;
+    background-color: #04D361;
+    box-shadow: 0px 2px  rgba(126, 118, 118, 0.562);
+}
+div.email i#send{
+    background-color: purple;
+    color: white;
+    transform: translateY(8px);
+    width: 35px;
+    height: 32px;
+    cursor: pointer;
+    border-radius: 5px;
+    box-shadow: 0px 2px  rgba(126, 118, 118, 0.562);
+}
+div.email i#send:hover{
+    background-color: rgb(94, 13, 94);
+}
+.link{
+    margin: 20px;
+}
+a{
+    text-decoration: none;
+}
+i#arrow{
+    transform: translateY(8px);
+}
+/*responsive part*/
+/*Tablet*/
+@media screen and (min-width: 768px) and (max-width: 1150px)  {
+    .email{
+        width: 27rem;
+    }
+}
+/*Cell Phone*/
+@media screen and (max-width: 768px) {
+    body{
+        width: 50%;
+        height: 100%;
+    }
+    .logo{
+        width: 100%;
+        height: 100%;
+    }
+    label{
+        margin-left: 5.5rem;
+    }
+    .email{
+        width: 20rem;
+        margin-left: 6.5rem;
+    }
+    .greencard{
+        margin-right: -6.5rem;
+    }
+    .link{
+        display: inline-flex;
+        flex-wrap: nowrap;
+        margin-left: -0.6rem;
+    }
+}
